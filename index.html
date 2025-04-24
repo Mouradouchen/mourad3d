@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي التجريبي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>موقعي التجريبي</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>مرحباً بك في موقعنا</h2>
+            <p>هذا موقع تجريبي بسيط تم إنشاؤه باستخدام HTML و CSS</p>
+            <a href="#features" class="btn">استكشف المزيد</a>
+        </section>
+
+        <section id="features" class="features">
+            <h3>مميزات موقعنا</h3>
+            <div class="features-container">
+                <div class="feature">
+                    <h4>تصميم حديث</h4>
+                    <p>موقع بواجهة بسيطة وعصرية</p>
+                </div>
+                <div class="feature">
+                    <h4>سهولة الاستخدام</h4>
+                    <p>واجهة سهلة وبديهية للمستخدمين</p>
+                </div>
+                <div class="feature">
+                    <h4>متجاوب مع جميع الأجهزة</h4>
+                    <p>يعمل على جميع أحجام الشاشات</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; <span id="year"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
